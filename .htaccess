@@ -6,5 +6,5 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [L]
 IndexIgnore *
 Options -Indexes
-ErrorDocument 404 http://salio.me/error.html
-ErrorDocument 403 http://salio.me/error.html
+ErrorDocument 404 http://salio.me/error
+ErrorDocument 403 http://salio.me/error
