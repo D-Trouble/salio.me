@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: #131116;
-    color: white;
+    color: #eceee9;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,4 +16,13 @@ body {
     left: 50%;
     margin: -125px 0 0 -75px;
     background: none;
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    width: 99%;
+    height:59px;
+    text-align: center;
+    font-size: 90%;
 }
