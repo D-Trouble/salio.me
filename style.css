@@ -9,7 +9,6 @@ body {
 }
 
 #main {
-    text-align: center;
     position: absolute;
     z-index: 15;
     top: 50%;
@@ -20,7 +19,12 @@ body {
     height: 240px;
     align-content: center;
     color: #eceee9;
+}
+
+#main_div {
     overflow-wrap: break-word;
+    text-align: center;
+    
 }
 
 footer {
