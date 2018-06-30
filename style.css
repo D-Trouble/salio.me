@@ -20,6 +20,7 @@ body {
     height: 240px;
     align-content: center;
     color: #eceee9;
+    overflow-wrap: break-word;
 }
 
 footer {
