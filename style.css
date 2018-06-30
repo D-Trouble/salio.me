@@ -22,7 +22,37 @@ footer {
     position: absolute;
     bottom:0;
     width: 99%;
-    height:29px;
+    height: 79px;
     text-align: center;
-    font-size: 90%;
+    font-size: 80%;
+}
+
+a:link {
+    color: #eceee9;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:visited {
+    color: #eceee9;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:hover {
+    color: #eceee9;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:active {
+    color: #eceee9;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+#list {
+    word-spacing: 20px;
+    padding: 0px;
+    margin: 0px;
 }
