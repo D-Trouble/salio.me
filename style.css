@@ -65,8 +65,15 @@ a:active {
     word-spacing: 20px;
     padding: 0px;
     margin: 0px;
+    margin-left: -95px;
 }
 
 #link_selected {
     color: #79777d; 
+}
+
+#link_steam {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 20px;
 }
