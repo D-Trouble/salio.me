@@ -83,6 +83,12 @@ a:active {
     margin-left: 20px;
 }
 
-#link_twitter {
+#link_twitter_01 {
     font-size: 100%;
+    color: #D5B552;
+}
+
+#link_twitter_02 {
+    font-size: 100%;
+    color: #00aced;
 }
