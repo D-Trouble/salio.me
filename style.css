@@ -88,7 +88,19 @@ a:active {
     color: #D5B552;
 }
 
+#mail{
+    font-size: 100%;
+}
+
 #link_twitter_02 {
     font-size: 100%;
     color: #00aced;
+}
+#t {
+  width: 0px;
+  height: 0px;
+  border: none;
+}
+#t:focus {
+  outline: none;
 }
