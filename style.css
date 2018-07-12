@@ -96,11 +96,37 @@ a:active {
     font-size: 100%;
     color: #00aced;
 }
+
 #t {
-  width: 0px;
-  height: 0px;
-  border: none;
+    width: 0px;
+    height: 0px;
+    border: none;
 }
+
 #t:focus {
-  outline: none;
+    outline: none;
+}
+
+@media screen and (max-width: 736px){
+    #main {
+        position: absolute;
+        z-index: 15;
+        top: 50%;
+        left: 50%;
+        margin: -125px 0 0 -170px;
+        background: none;
+        width: 340px;
+        height: 240px;
+        align-content: center;
+        color: #eceee9;
+        text-align: center;
+    }
+    
+    video {
+        width: 300px;
+    }
+}
+
+@-ms-viewport {
+    width: device-width;
 }
