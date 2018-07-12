@@ -70,7 +70,7 @@ a:active {
     word-spacing: 20px;
     padding: 0px;
     margin: 0px;
-    margin-left: -95px;
+    margin-left: -150px;
 }
 
 #link_selected {
@@ -80,7 +80,14 @@ a:active {
 #link_steam {
     position: absolute;
     margin-top: 1px;
+    margin-left: 71px;
+}
+
+#link_discord {
+    position: absolute;
+    margin-top: -6px; 
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 #link_twitter_01 {
