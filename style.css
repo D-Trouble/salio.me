@@ -129,8 +129,9 @@ a:active {
         text-align: center;
     }
     
-    video {
+    #video {
         width: 300px;
+        height: 169px;
     }
 }
 
