@@ -97,6 +97,7 @@ a:active {
 
 #mail{
     font-size: 100%;
+    cursor: pointer;
 }
 
 #link_twitter_02 {
