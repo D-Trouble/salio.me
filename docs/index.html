@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<head>
+
+    <link rel='stylesheet' href='highlight/styles/default.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        div#menuBoczne {
+            float: left;
+            width: 8em;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            padding-right: 3em;
+            border: 1px solid rgb(195, 194, 194);
+            position: fixed;
+           
+        }
+        div#menuBoczne ul li {
+            list-style: none;
+            padding-top: 0.75em;
+            padding-bottom: 0.75em;
+            color: rgb(36, 65, 117);
+            cursor: pointer;
+        }
+        div#menuBoczne ul li:hover {
+            text-decoration: underline;
+        }
+        div#docs {
+
+            color: rgba(0,0,0,0.87);
+            margin-left: 15em;
+
+        }
+        .luaCode {
+
+            display: inline-block; 
+            width: 30em;
+            border: 1px solid rgb(148, 143, 143);
+            text-align: left;
+            font-size: 0.9em;
+
+        }
+        .separator {
+
+            border: 1px solid rgb(0,0,0,0.87);
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id='menuBoczne'>
+        <ul>
+            <li id='Tomain'>Main</li>
+            <li id='ToInit'>Init</li>
+            <li id='ToUpdate'>Update</li>
+            <!-- <li id='ToGetKey'>GetKey</li> -->
+            <li id='ToSetUpdate'>SetUpdate</li>
+            <li id='ToGetPlayer'>GetPlayer</li>
+            <li id='TodePlayer'>disablePlayer<br>enablePlayer</li>
+            <li id='ToisPlayerMoving'>isPlayerMoving</li>
+            <li id='TosetPlayer'>setPlayer</li>
+            <li id='TosetGravity'>SetGravity</li>
+            <li id='ToclearBlocks'>clearBlocks</li>
+            <li id='ToplaceBlock'>placeBlock</li>
+        </ul>
+    </div>
+    <div id='docs'>
+
+        <h1 id='Start'>README</h1>
+        <pre class='plaintext'>README is not ready yet. For ANY questions contant Badosz on discord here: <a href="https://discord.gg/pzDaBB6">https://discord.gg/pzDaBB6</a></pre>
+
+        <br><hr class="separator"><br>
+
+        <h1 id='main'>main.lua</h1>
+        <pre><code class='luaCode hljs lua'>
+        function init()
+            --
+            --
+        end
+
+        function update()
+            --
+            --
+        end
+        </code></pre>
+        <br><hr class="separator"><br>
+
+        <h1 id='init'>init</h1>
+        <pre><code class='luaCode hljs lua'>
+        function init()
+            --
+            --
+        end
+        </code></pre>
+        This function runs only once when game starts.
+        <br><hr class="separator"><br>
+
+        <h1 id='update'>update</h1>
+        <pre><code class='luaCode hljs lua'>
+        function update()
+            --
+            --
+        end
+        </code></pre>
+        This function runs every x defined in <span id='ToSetUpdate'>setUpdate()</span>.
+        <br><hr class="separator"><br>
+
+<!--         <h1 id='getKey'>getKey</h1>
+        <pre><code class='luaCode hljs lua'>
+        function getKey(key)
+            --
+            --
+        end
+        </code></pre>
+        key = int key id (e. g. w = 87)<br>
+        If key is pressed, function runs with 'key' parameter.
+        <br><hr class="separator"><br> -->
+
+        <h1 id='setUpdate'>setUpdate</h1>
+        <pre><code class='luaCode hljs lua'>
+        setUpdate(s)
+        </code></pre>
+        s = int in 1/1000th of second.
+        <br><hr class="separator"><br>
+
+
+        <h1 id='getPlayer'>getPlayer</h1>
+        <pre><code class='luaCode hljs lua'>
+        x = getPlayerX()
+        y = getPlayerY()
+        </code></pre>
+        x = int 1-1280<br>
+        y = int 1-720
+        <br><hr class="separator"><br>
+
+
+        <h1 id='dePlayer'>disablePlayer<br>enablePlayer</h1>
+        <pre><code class='luaCode hljs lua'>
+        disablePlayer()
+        enablePlayer()
+        </code></pre>
+        Enables/disables player movement.
+        <br><hr class="separator"><br>
+
+        <h1 id='isPlayerMoving'>isPlayerMoving</h1>
+        <pre><code class='luaCode hljs lua'>
+        c = isPlayerMoving()
+        </code></pre>
+        Returns player moving statement.<br>
+        c = boolean
+        <br><hr class="separator"><br>
+
+
+        <h1 id='setPlayer'>setPlayer</h1>
+        <pre><code class='luaCode hljs lua'>
+        setPlayerY(y)
+        setPlayerX(x)
+        </code></pre>
+        Changes player position.<br>
+        y = int<br>
+        x = int<br>
+        <br><hr class="separator"><br>
+
+        <h1 id='setGravity'>setGravity</h1>
+        <pre><code class='luaCode hljs lua'>
+        setGravity(g)
+        </code></pre>
+        Sets player gravity.<br>
+        g = int
+        <br><hr class="separator"><br>
+
+        <h1 id='clearBlocks'>clearBlocks</h1>
+        <pre><code class='luaCode hljs lua'>
+        clearBlocks()
+        </code></pre>
+        Destroys all blocks.
+        <br><hr class="separator"><br>
+
+        <h1 id='placeBlock'>placeBlock</h1>
+        <pre><code class='luaCode hljs lua'>
+        placeBlock(name,x,y)
+        </code></pre>
+        Creates a blocks.<br>
+        name = string ("white","star","red")<br>
+        x = int 0 - 63<br>
+        y = int 0 - 35<br>
+
+        <br><hr class="separator"><br>
+
+
+
+
+    </div>
+
+
+    <script src="jquery.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    
+    function scrollToEl(elemToClick, elemToScrollTo){
+        $(elemToClick).click(function(){
+            $('html, body').animate({
+        scrollTop: $(elemToScrollTo).offset().top
+        }, { duration: 200, easing: 'easeInOutQuad'});
+        });
+    }
+
+    scrollToEl("#ToSetUpdate", "#setUpdate");
+    scrollToEl("#Tomain", "#main");
+    scrollToEl('#ToInit','#init');
+    scrollToEl('#ToUpdate','#update');
+    scrollToEl('#ToSetUpdate','#setUpdate')
+    scrollToEl('#ToGetKey','#getKey');
+    scrollToEl('#ToGetPlayer','#getPlayer')
+    scrollToEl('#TodePlayer','#dePlayer')
+    scrollToEl('#ToisPlayerMoving','#isPlayerMoving')
+    scrollToEl('#TosetPlayer','#setPlayer')
+    scrollToEl('#TosetGravity','#setGravity')
+    scrollToEl('#ToclearBlocks','#clearBlocks')
+    scrollToEl('#ToplaceBlock','#placeBlock')
+
+
+
+
+    </script>
+</body>
