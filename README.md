@@ -1,2 +1,2 @@
 # salio.me
-[type](https://img.shields.io/badge/type-website-red.svg)
+[![Type](https://img.shields.io/badge/type-website-red.svg)](https://salio.me)
